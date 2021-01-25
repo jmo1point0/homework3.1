@@ -21,6 +21,7 @@ Page Displays password and says:
 
 Links:
 https://github.com/jmo1point0/homework3.1 
+https://jmo1point0.github.io/homework3.1/
 
 =======
 # homework3.1
