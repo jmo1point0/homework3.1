@@ -1,13 +1,13 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
-// Set our global vars
+// Set global vars
 var userOptions = {
     expectSpecialChars: false,
     expectNumericChars: false,
     expectUppercaseChars: false,
     expectLowercaseChars: false,
   };
-// Write password to the #password input
+// Write password to password input
 function start() {
    console.log("we're here!");
    var password = generatePassword();
@@ -150,33 +150,33 @@ function generatePassword() {
       // We push the specified array characters to optionalChars and then pull from there to create the password
       // Once we have the optionalChars we combine the possible characters together with the concat method and then generate
       // a random password
-      // If lower
+      // lower
       if (userOptions.expectLowercaseChars == true){
       // add lowerCharsArray to userOptionalChars
         userOptionalChars.push(lowerCasedCharacters);
       }
-      // If upper
+      // upper
       if (userOptions.expectUppercaseChars == true){
       // add upperCharsArray to userOptionalChars
         userOptionalChars.push(upperCasedCharacters);
       }
-      // If special
+      // special
       if (userOptions.expectSpecialChars == true){
       // Add specialCharsArray to userOptionalChars
         userOptionalChars.push(specialCharacters);
       }
-      // If numeric
+      // numeric
       if (userOptions.expectNumericChars == true){
       // Add numericCharsArray to userOptionalChars
         userOptionalChars.push(numericCharacters);
       }
       console.log(userOptionalChars);
-      // Grab the pushed arrays from userOptional Chars and combine them in optionsArray
+      // Grab arrays from userOptional Chars and combine in optionsArray
       for (var h = 0; h < userOptionalChars.length; h++){
         optionsArray = optionsArray.concat(userOptionalChars[h]);
       }
       console.log("Options array is ", optionsArray);
-      // Get the length of the optionsArray
+      // Get length of the optionsArray
       var length = optionsArray.length;
       // For loop for creating password
       for (var i = 0; i < passwordLength; i++){
@@ -186,14 +186,14 @@ function generatePassword() {
       for (var x = 0; x < password.length; x++){
         solved += password[x];
       }
-      // Set password to solved so that we can append password to the screen later on
+      // Set password to solved to append password to the screen later on
       password = solved;
-     // The function will return a password because this is used to append the password to the screen later on
+     // Return a password because this is used to append the password to the screen later on
       return password;
     }
    // ======= functions calls (start) ======
    getUserOptions();
-   // We will return a the function in order to return a password from generatePassword() the larger function
+   // Return function in order to return a password from generatePassword() the larger function
    return generatePassword(userOptions)
 }
 // Add event listener to generate button
