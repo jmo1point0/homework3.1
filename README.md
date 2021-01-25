@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # UTOR-TOR-FSF-FT-01-2021-U-C
 The password generator homework assignment contains the following files:
 Index.html
@@ -21,3 +22,6 @@ Page Displays password and says:
 Links:
 https://github.com/jmo1point0/homework3.1 
 
+=======
+# homework3.1
+>>>>>>> fe10481d3ffee82d4dbdeaa290eb32efd3d247de
