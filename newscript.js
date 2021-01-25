@@ -17,7 +17,7 @@ function start() {
 //return a string
 function generatePassword() {
    // ======= vars definition ======
-   // Array of special characters to be included in password
+   // Array of special characters
    var specialCharacters = [
       "@",
       "%",
@@ -43,9 +43,9 @@ function generatePassword() {
       "_",
       ".",
    ];
-   // Array of numeric characters to be included in password
+   // Array of numeric characters
    var numericCharacters = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
-   // Array of lowercase characters to be included in password
+   // Array of lowercase characters
    var lowerCasedCharacters = [
       "a",
       "b",
@@ -74,7 +74,7 @@ function generatePassword() {
       "y",
       "z",
    ];
-   // Array of uppercase characters to be included in password
+   // Array of uppercase characters 
    var upperCasedCharacters = [
       "A",
       "B",
@@ -147,8 +147,6 @@ function generatePassword() {
       var password = [];
       var optionsArray = [];
       var solved = '';
-      // We push the specified array characters to optionalChars and then pull from there to create the password
-      // Once we have the optionalChars we combine the possible characters together with the concat method and then generate
       // a random password
       // lower
       if (userOptions.expectLowercaseChars == true){
